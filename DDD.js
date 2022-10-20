@@ -1,5 +1,5 @@
 document.querySelector("#ddd").addEventListener("change", buscaAPI);
-cidades = new Array();
+c = new Array();
 function buscaAPI(evento){
 	fetch(`https://brasilapi.com.br/api/ddd/v1/${evento.target.value}`)
 	.then(res => res.json())
@@ -9,11 +9,11 @@ function buscaAPI(evento){
 	});
 }
 function listaCidades(){
-	lista = document.querySelector('ul');
-	lista.textContent = '';
-	cidades.forEach(cidade =>{
-		item = document.createElement('li');
-		item.textContent = cidade;
-		lista.append(item);
+	l = document.querySelector('ul');
+	l.textContent = '';
+	c.forEach(cidade =>{
+		i = document.createElement('li');
+		i.textContent = cidade;
+		l.append(item);
 	});
 }
