@@ -3,8 +3,8 @@ cidades = new Array();
 function buscaAPI(evento){
 	fetch(`https://brasilapi.com.br/api/ddd/v1/${evento.target.value}`)
 	.then(res => res.json())
-	.then(dados => {
-		cidades = dados.cities;
+	.then(ddd => {
+		cidades = ddd.cities;
 		listaCidades();
 	});
 }
