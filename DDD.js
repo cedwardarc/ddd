@@ -15,5 +15,6 @@ function listaCidades(){
 		item = document.createElement('li');
 		item.textContent = cidade;
 		lista.append(item);
+		
 	});
 }
